@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form action="/submit" method="post">\
@@ -18,25 +19,31 @@
         <input type="email" id="email" name="email" placeholder="Enter your Email">
         <br><br>
 
-        <div>Gender</div>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
+        <div class="input-group">
+            <div>Gender</div>
+            <div class="gender-options">
+              <div class="radio-option">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
 
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <br><br>
-
-        <label for="phone">Phone No.: </label>
+        <label for="phone">Phone Number: </label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your Mobile Number">
         <br><br>
 
-        <label for="dob">D.O.B: </label>
+        <label for="dob">Date of Birth: </label>
         <input type="date" id="dob" name="dob">
         <br><br>
         <label for "age">AGE </label>
         <input type="Age" id="'age" name="Age" placeholder="Enter your Age" >
         <br><br>
-
+        <br><br>
         <button><font size="4.5">Submit</button></font>
     </form>
 </body>
